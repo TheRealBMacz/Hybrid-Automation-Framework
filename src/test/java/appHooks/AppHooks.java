@@ -33,7 +33,7 @@ public class AppHooks {
 
     @After(order = 0)
     public void quitBrowser(){
-        webDriver.quit();;
+        webDriver.quit();
     }
 
     /**
