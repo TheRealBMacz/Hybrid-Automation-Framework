@@ -34,6 +34,14 @@ public class LoginPage {
        driver.findElement(loginBtn).click();
     }
 
+    public ProductsPage performLogin(String userName, String password){
+        System.out.println("Performing Login with username: "+userName+ " and Password: "+password);
+        driver.findElement(usernameTxtBox).sendKeys(userName);
+        driver.findElement(passwordTxtBox).sendKeys(password);
+        driver.findElement(loginBtn).click();
+        return new ProductsPage(driver);
+    }
+
     public String getErrorMessage(){
         // TODO Auto-generated method stub
         return driver.findElement(errorMsg).getText().trim();
