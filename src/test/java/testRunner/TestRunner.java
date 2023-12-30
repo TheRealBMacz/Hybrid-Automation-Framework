@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/appFeatures"},
         glue = {"stepDefinations","appHooks"},
-        plugin = {"pretty"}
+        plugin = {"pretty",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 
 
 )

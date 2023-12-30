@@ -13,6 +13,7 @@ import java.time.Duration;
 public class LoginPageSteps {
 
     private static String pageTitle;
+    public static long noOfSeconds =5;
     private LoginPage loginPage = new LoginPage(DriverFactory.getWebDriver());
     @Given("The user is in SwagLabs Login Page")
     public void the_User_Is_In_SwagLabs_LoginPage() {
@@ -24,7 +25,7 @@ public class LoginPageSteps {
         loginPage.enterUserName(useName);
         loginPage.enterPassword(password);
         loginPage.clickLoginBtn();
-        WebDriverWait webDriverWait = new WebDriverWait(DriverFactory.getWebDriver(), Duration.ofSeconds(3));
+        WebDriverWait webDriverWait = new WebDriverWait(DriverFactory.getWebDriver(),Duration.ofSeconds(noOfSeconds));
     }
     @Then("Verify user is thrown an error message saying {string}")
     public void verify_user_is_thrown_an_error_message_saying(String expectedErrorMessage) {
