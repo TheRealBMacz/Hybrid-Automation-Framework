@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">HybridAutomationFramework Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 30, 2023 03:16:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 7, 2024 07:50:05 pm</span></a>
 </li>
 </ul>
 </div>
@@ -52,6 +52,11 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -61,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 30, 2023 03:16:20 pm</h3>
+<h3>Jan 7, 2024 07:50:05 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 30, 2023 03:16:42 pm</h3>
+<h3>Jan 7, 2024 07:50:21 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -95,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -118,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>7</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>7</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -138,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>24</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='46%'><b>21</b> steps failed,
+<b>24</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -157,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Validate Login to Sauce Labs":17.021,"Products Page Feature":4.149
+"Validate Login to Sauce Labs":11.955,"Products Page Feature":3.901
 };
 </script>
 <div class="row">
@@ -192,21 +197,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 0,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 7,
-failChild: 0,
+passChild: 0,
+failChild: 7,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 24,
-failGrandChild: 0,
+passGrandChild: 0,
+failGrandChild: 21,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 24,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -220,7 +225,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -228,25 +233,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Validate Login to Sauce Labs</p>
             <p class="text-sm">
-              <span>15:16:21 pm</span> / <span>00:00:17:021</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>19:50:05 pm</span> / <span>00:00:11:955</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Validate Login to Sauce Labs</h5>
-<span class='badge badge-success'>12.30.2023 15:16:21</span>
-<span class='badge badge-danger'>12.30.2023 15:16:38</span>
-<span class='badge badge-default'>00:00:17:021</span>
+<h5 class="test-status text-fail">Validate Login to Sauce Labs</h5>
+<span class='badge badge-success'>01.07.2024 19:50:05</span>
+<span class='badge badge-danger'>01.07.2024 19:50:17</span>
+<span class='badge badge-default'>00:00:11:955</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -256,29 +261,76 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login Page title validation</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login Page title validation</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.the_User_Is_In_SwagLabs_LoginPage()">
+              <div class="step fail-bg" title="BEFORE">
+                <span>appHooks.AppHooks.launchBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.the_User_Is_In_SwagLabs_LoginPage()">
                 <span>Given The user is in SwagLabs Login Page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.theLoginPageLogoIsDisplayed()">
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.theLoginPageLogoIsDisplayed()">
                 <span>And The Login Page Logo is displayed</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.theUserGetsTheTitleOfThePage()">
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.theUserGetsTheTitleOfThePage()">
                 <span>When The user gets the title of the page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.theTitleOfThePageShouldBe(java.lang.String)">
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.theTitleOfThePageShouldBe(java.lang.String)">
                 <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -287,30 +339,77 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Login to Sauce Labs with locked out user</div>
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Login to Sauce Labs with locked out user</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Login to Sauce Labs with locked out user</div>
+                  <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Login to Sauce Labs with locked out user</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given The user is in SwagLabs Login Page</span>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.launchBrowser()</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
+                    <span>Given The user is in SwagLabs Login Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
                     <span>When User logs into application with the standard_user and secret_sauce</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
                   </div>
               </div>
@@ -318,23 +417,70 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Login to Sauce Labs with locked out user</div>
+                  <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Login to Sauce Labs with locked out user</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given The user is in SwagLabs Login Page</span>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.launchBrowser()</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
+                    <span>Given The user is in SwagLabs Login Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
                     <span>When User logs into application with the locked_out_user and secret_sauce</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
                   </div>
               </div>
@@ -342,23 +488,70 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Login to Sauce Labs with locked out user</div>
+                  <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Login to Sauce Labs with locked out user</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given The user is in SwagLabs Login Page</span>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.launchBrowser()</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
+                    <span>Given The user is in SwagLabs Login Page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
                     <span>When User logs into application with the problem_user and secret_sauce</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
                   </div>
               </div>
@@ -366,23 +559,70 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Login to Sauce Labs with locked out user</div>
+                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>Login to Sauce Labs with locked out user</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.launchBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
                     <span>Given The user is in SwagLabs Login Page</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>When User logs into application with the performance_glitch_user and secret_sauce</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
                   </div>
               </div>
@@ -392,25 +632,25 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="44"
+        <li class="test-item"  status="fail" test-id="44"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Products Page Feature</p>
             <p class="text-sm">
-              <span>15:16:38 pm</span> / <span>00:00:04:149</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>19:50:17 pm</span> / <span>00:00:03:901</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Products Page Feature</h5>
-<span class='badge badge-success'>12.30.2023 15:16:38</span>
-<span class='badge badge-danger'>12.30.2023 15:16:42</span>
-<span class='badge badge-default'>00:00:04:149</span>
+<h5 class="test-status text-fail">Products Page Feature</h5>
+<span class='badge badge-success'>01.07.2024 19:50:17</span>
+<span class='badge badge-danger'>01.07.2024 19:50:21</span>
+<span class='badge badge-default'>00:00:03:901</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -420,31 +660,78 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Products page title validation</div>
+        <div class="node" id="45"><span class="badge log fail-bg mr-2">Fail</span>Products page title validation</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.userIsAlreadyLoggedIntoTheApplicationUsingTheValidCredentials(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="BEFORE">
+                <span>appHooks.AppHooks.launchBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.userIsAlreadyLoggedIntoTheApplicationUsingTheValidCredentials(io.cucumber.datatable.DataTable)">
                 <span>Given user is already logged into the application using the valid credentials</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table>
       </div>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.user_is_on_the_products_page()">
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.user_is_on_the_products_page()">
                 <span>Given user is on the Products page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.theUserGetsTheTitleOfThePage()">
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.theUserGetsTheTitleOfThePage()">
                 <span>When The user gets the title of the page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.LoginPageSteps.theTitleOfThePageShouldBe(java.lang.String)">
+              <div class="step skip-bg" title="stepDefinations.LoginPageSteps.theTitleOfThePageShouldBe(java.lang.String)">
                 <span>Then The title of the page should be "Swag Labs".</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -453,33 +740,80 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>available products validation on Products page</div>
+        <div class="node" id="54"><span class="badge log fail-bg mr-2">Fail</span>available products validation on Products page</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.userIsAlreadyLoggedIntoTheApplicationUsingTheValidCredentials(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="BEFORE">
+                <span>appHooks.AppHooks.launchBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BMACZ-WORKBOX', ip: '192.168.198.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at org.example.driverFactory.DriverFactory.initDriver(DriverFactory.java:15)
+	at appHooks.AppHooks.launchBrowser(AppHooks.java:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.userIsAlreadyLoggedIntoTheApplicationUsingTheValidCredentials(io.cucumber.datatable.DataTable)">
                 <span>Given user is already logged into the application using the valid credentials</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table>
       </div>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.user_is_on_the_products_page()">
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.user_is_on_the_products_page()">
                 <span>Given user is on the Products page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.theUserGetsTheProductsOnTheProductsSection(io.cucumber.datatable.DataTable)">
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.theUserGetsTheProductsOnTheProductsSection(io.cucumber.datatable.DataTable)">
                 <span>Then the user gets the products on the products section</span>
       <div><table class='markup-table table '><tr><td>Sauce Labs Backpack</td></tr><tr><td>Sauce Labs Bike Light</td></tr><tr><td>Sauce Labs Bolt T-Shirt</td></tr><tr><td>Sauce Labs Fleece Jacket</td></tr><tr><td>Sauce Labs Onesie</td></tr><tr><td>Test.allTheThings() T-Shirt (Red)</td></tr></table>
       </div>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinations.ProductsPageSteps.theCountOfTheProductsDisplayedShouldBeEqualTo(int)">
+              <div class="step skip-bg" title="stepDefinations.ProductsPageSteps.theCountOfTheProductsDisplayedShouldBeEqualTo(int)">
                 <span>And the count of the products displayed should be equal to 6</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at appHooks.AppHooks.tearDown(AppHooks.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>appHooks.AppHooks.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.webDriver" is null
+	at appHooks.AppHooks.quitBrowser(AppHooks.java:36)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -497,7 +831,285 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-        </div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login Page title validation.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='47'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.Products page title validation.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='56'>appHooks.AppHooks.launchBrowser()</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.available products validation on Products page.appHooks.AppHooks.launchBrowser()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login Page title validation.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login Page title validation.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='34'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Validate Login to Sauce Labs.Login to Sauce Labs with locked out user.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='52'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.Products page title validation.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='53'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.Products page title validation.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='61'>appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.available products validation on Products page.appHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='44' id='62'>appHooks.AppHooks.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Products Page Feature.available products validation on Products page.appHooks.AppHooks.quitBrowser()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
       </div>
     </div>
   </div>
